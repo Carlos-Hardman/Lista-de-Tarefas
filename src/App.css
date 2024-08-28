@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+  display: flex;      /* Define o layout como flexível */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Alinha os itens horizontalmente no centro */
+  justify-content: center; /* Alinha os itens verticalmente no centro */
+  min-height: 100vh;  /* Garante que o contêiner ocupe a altura total da viewport */
+  margin: 0;          /* Remove margens padrão do navegador */
+  background-color: #f0f0f0; /* Define uma cor de fundo opcional */
 }
 
 .App-logo {
@@ -23,10 +30,68 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+h1{
+  border:solid black 2px;
+  border-radius:20px;
+  padding:30px;
+}
 
 .App-link {
   color: #61dafb;
 }
+/* src/App.css */
+div {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+  padding: 15px;
+  border:solid black 1px;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+  margin-right: 10px;
+
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.Botaoadicionar{
+  padding:15px;
+  border:solid black 1px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+ position:relative;
+ left:-10px;
+ 
+}
+.Botaoremover{
+  margin-left:17px;
+  border:solid red;
+  background:red;
+  color:white;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+
+li {
+  margin-bottom: 10px;
+}
+/* src/App.css ou src/componentes/Graficotarefa.css */
+.grafico-container {
+  width: 350px;  /* Define uma largura pequena para o gráfico */
+  height: 350px; /* Define uma altura pequena para o gráfico */
+  margin: 20px;  /* Adiciona espaçamento ao redor do gráfico, se necessário */
+  position: relative; /* Necessário para layout */
+}
+
+
 
 @keyframes App-logo-spin {
   from {
